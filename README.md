@@ -1,8 +1,8 @@
 ```bash
 #!/bin/bash
-# author: Amittai J. Wekesa
-# bash script to rename a file.
-# Usage: ./rename.sh
+# author: Amittai J. Wekesa (@siavava)
+# Greetings! bash script.
+# Usage: ./hello.sh
 # 
 
 # Enter your name here.

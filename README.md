@@ -1,5 +1,27 @@
-```c
-printf("Hello, you!");
+```bash
+#!/bin/bash
+# author: Amittai J. Wekesa
+# bash script to rename a file.
+# Usage: ./rename.sh
+# 
+
+# Enter your name here.
+read -p "What is your name?" name
+# Enter your origin
+read -p "Where iare you from? (anything goes!)" origin
+
+# Check the name
+if [ -n $name ]; then
+  # Check the place of origin
+  if [ -n $origin ]; then
+    echo "Hello $name from $origin!"
+  else
+    echo "Hello $name."
+  fi
+else
+  echo "Sorry, I missed your name. Please try again."
+fi
+
 ```
 - 👋 Hi, I’m @siavava
 - 👀 I’m interested in Theoretical Computation (Algorithms, etc.) and applied CS fields, particularly Machine Learning and Deep Learning

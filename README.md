@@ -6,9 +6,9 @@
 # 
 
 # Enter your name here.
-read -p "What is your name?" name
+read -p "Name: ..." name
 # Enter your origin
-read -p "Where iare you from? (anything goes!)" origin
+read -p "Origin: ..." origin
 
 # Check the name
 if [ -n $name ]; then
@@ -19,7 +19,7 @@ if [ -n $name ]; then
     echo "Hello $name."
   fi
 else
-  echo "Sorry, I missed your name. Please try again."
+  echo "Sorry, we missed your name. Please try again."
 fi
 
 ```

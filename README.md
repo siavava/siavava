@@ -1,3 +1,5 @@
+## Hello!
+
 ```bash
 #!/bin/bash
 # author: Amittai J. Wekesa (@siavava)
@@ -23,6 +25,8 @@ else
 fi
 
 ```
+***
+
 - 👋 Hi, I’m @siavava
 - 👀 I’m interested in Theoretical Computation (Algorithms, etc.) and applied CS fields, particularly Machine Learning and Deep Learning
 - 🌱 I code in Python, Java, Julia, C, TypeScript, F#, and sometimes in whichever language offers utility.

@@ -2,7 +2,7 @@
 
 ***
 
-[![Amittai's GitHub Stats](https://github-readme-stats.vercel.app/api?username=siavava&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+[![Amittai's GitHub Stats](https://github-readme-stats.vercel.app/api?username=siavava&show_icons=true&theme=dark&count_private=true&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
 [![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=siavava&layout=compact&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 
 I'm a CS student interested in systems programmikng, algorithms, and applied CS.

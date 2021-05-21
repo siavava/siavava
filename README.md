@@ -2,11 +2,11 @@
 
 ***
 
-<a href="httpe://github.com/qnuraghazra/github-readme-stats">
+<a href="httpe://github.com/anuraghazra/github-readme-stats">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=siavava&repo=github-readme-stats&show_icons=true&theme=dark&count_private=true&include_all_commits=true)" />
 </a>
 
-<a href="httpe://github.com/qnuraghazra/top-langs">
+<a href="httpe://github.com/anuraghazra/top-langs">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=siavava&repo=top-langs&layout=compact&theme=dark&langs_count=10&count_private=true&include_all_commits=true)" />
 </a>
 

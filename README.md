@@ -1,9 +1,9 @@
 ## Hello!
 
 ***
-I'm a CS student interested in systems programmikng, algorithms, and applied CS.
+I'm a CS student interested in systems programming, algorithms, and applied CS, particularly deep learning, computer vision, and NLP.
 
-Portfolio website: [link](https://www.siavava.me/)
+Portfolio: [link](https://www.siavava.me/)
 
 ***
  

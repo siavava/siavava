@@ -2,6 +2,23 @@
 
 ***
 
+<a href="httpe://github.com/qnuraghazra/github-readme-stats">
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=siavava&show_icons=true&theme=dark&count_private=true&include_all_commits=true)" />
+</a>
+
+<a href="httpe://github.com/qnuraghazra/github-readme-stats">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=siavava&layout=compact&theme=dark&langs_count=10&count_private=true&include_all_commits=true)" />
+</a>
+ 
+ 
+[![Amittai's GitHub Stats](https://github-readme-stats.vercel.app/api?username=siavava&show_icons=true&theme=dark&count_private=true&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
+[![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=siavava&layout=compact&theme=dark&langs_count=10)](https://github.com/anuraghazra/github-readme-stats)
+
+
+
+
+
+
 [![Amittai's GitHub Stats](https://github-readme-stats.vercel.app/api?username=siavava&show_icons=true&theme=dark&count_private=true&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
 [![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=siavava&layout=compact&theme=dark&langs_count=10)](https://github.com/anuraghazra/github-readme-stats)
 

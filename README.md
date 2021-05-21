@@ -3,11 +3,11 @@
 ***
 
 <a href="httpe://github.com/qnuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=siavava&show_icons=true&theme=dark&count_private=true&include_all_commits=true)" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=siavava&repo=github-readme-stats&show_icons=true&theme=dark&count_private=true&include_all_commits=true)" />
 </a>
 
 <a href="httpe://github.com/qnuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=siavava&layout=compact&theme=dark&langs_count=10&count_private=true&include_all_commits=true)" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=siavava&repo=top-langs&layout=compact&theme=dark&langs_count=10&count_private=true&include_all_commits=true)" />
 </a>
  
  

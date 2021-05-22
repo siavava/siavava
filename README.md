@@ -7,7 +7,7 @@ Portfolio: [link](https://www.siavava.me/)
 
 ***
  
-![Amittai's GitHub Stats](https://github-readme-stats.vercel.app/api?username=siavava&theme=highcontrast&show_icons=true&count_private=true&include_all_commits=true) [![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=siavava&layout=compact&theme=dark&langs_count=8&count_private=true&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
+![Amittai's GitHub Stats](https://github-readme-stats.vercel.app/api?username=siavava&theme=highcontrast&show_icons=true&count_private=true&include_all_commits=true) [![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=siavava&layout=compact&langs_count=8&count_private=true&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
 
 ***
 

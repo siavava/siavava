@@ -3,7 +3,7 @@
 ***
 I'm a CS student interested in systems programming, algorithms, and applied CS, particularly deep learning, computer vision, and NLP.
 
-Portfolio: [link](https://www.siavava.me/)
+Here's a link to my portfolio: [link](https://www.siavava.me/)
 
 ***
  

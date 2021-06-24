@@ -3,6 +3,8 @@
 ***
 I'm a CS student interested in systems programming, algorithms, and applied CS, particularly deep learning, computer vision, and NLP.
 
+Fun facts: I work in kali-linux! My favorite programming languages are Julia (for the elegance) and C++ for not being an absolute pain. I also love RUst and F#.
+
 Here's a link to my portfolio: [link](https://www.siavava.me/)
 
 ***

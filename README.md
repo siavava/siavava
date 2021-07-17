@@ -13,7 +13,7 @@ Here's a link to my portfolio: [link](https://www.siavava.me/)
 - I also love Rust and F#.
 - When I'm not coding or playing chess, I'm probably playing [Need for Speed](https://www.ea.com/games/need-for-speed) or having one of the 17 existential crises I have a day.
 - I think Fermat is a GOD.
-- Are [pentaquarks](https://home.cern/news/news/physics/lhcb-experiment-discovers-new-pentaquark) molecules? Question for the floor.
+- Are [pentaquarks](https://home.cern/news/news/physics/lhcb-experiment-discovers-new-pentaquark) molecules?
 
 ***
 

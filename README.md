@@ -10,7 +10,7 @@ Here's a link to my portfolio: [link](https://www.siavava.me/)
 ### Random facts/thoughts: 
 - I work in kali-linux! 
 - My favorite programming languages are Julia (for the elegance) and C++ for not being an absolute pain.
-- I also love Rust and F#.
+- I also love Rust and Haskell.
 - When I'm not coding or playing chess, I'm probably playing [Need for Speed](https://www.ea.com/games/need-for-speed) or having one of the 17 existential crises I have a day.
 - I think Fermat is a GOD.
 - Are [pentaquarks](https://home.cern/news/news/physics/lhcb-experiment-discovers-new-pentaquark) molecules?

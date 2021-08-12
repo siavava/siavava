@@ -19,7 +19,7 @@ Here's a link to my portfolio: [link](https://www.siavava.me/)
 
 ### And here are my general github stats (only public repos though.)
  
-![Amittai's GitHub Stats](https://github-readme-stats.vercel.app/api?username=siavava&theme=highcontrast&show_icons=true&count_private=true&include_all_commits=true) [![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=siavava&layout=compact&theme=highcontrast&langs_count=10&count_private=true&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
+![Amittai's GitHub Stats](https://github-readme-stats.vercel.app/api?username=siavava&theme=highcontrast&show_icons=true&count_private=true&include_all_commits=true) [![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=siavava&layout=compact&theme=highcontrast&langs_count=8&count_private=true&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
 
 ***
 

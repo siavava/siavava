@@ -26,40 +26,58 @@ onMounted(() => {
   const windowWidth = window.innerWidth
   const windowHeight = window.innerHeight
 
-  window.addEventListener("mousemove", (e) => {
+  
+  
+  const update = (e: MouseEvent | TouchEvent) => {
+    let x;
+    let y;
+
+    // if MouseEvent, set to clientX and clientY
+    if (e instanceof MouseEvent) {
+      x = e.clientX
+      y = e.clientY
+    } else if (e instanceof TouchEvent) {
+      // if TouchEvent, set to first touch
+      x = e.touches[0].clientX
+      y = e.touches[0].clientY
+    }
+    else {
+      return
+    }
     if (blob.value && north.value && south.value && east.value && west.value) {
-      blob.value.style.left = e.clientX + "px"
-      blob.value.style.top = e.clientY + "px"
+      
+      blob.value.style.left = x + "px"
+      blob.value.style.top = y + "px"
 
       // set north and south x to current x
-      north.value.style.left = e.clientX + "px"
-      south.value.style.left = e.clientX + "px"
+      north.value.style.left = x + "px"
+      south.value.style.left = x + "px"
 
       // set east and west y to current y
-      east.value.style.top = e.clientY + "px"
-      west.value.style.top = e.clientY + "px"
+      east.value.style.top = y + "px"
+      west.value.style.top = y + "px"
 
       // set north bottom to current y - 30
-      north.value.style.bottom = window.innerHeight - e.clientY + OFFSET + "px"
+      north.value.style.bottom = window.innerHeight - y + OFFSET + "px"
 
       // set south top to current y - 30
-      south.value.style.top = e.clientY + OFFSET + "px"
+      south.value.style.top = y + OFFSET + "px"
 
       // set east left to current x - 30
-      east.value.style.left = e.clientX + OFFSET + "px"
+      east.value.style.left = x + OFFSET + "px"
 
       // set west right to current x - 30
-      west.value.style.right = window.innerWidth - e.clientX + OFFSET + "px"
+      west.value.style.right = window.innerWidth - x + OFFSET + "px"
 
       // set x and y coords
-      xCoord.value!.innerText = `${e.clientX.toString()}px`
-      yCoord.value!.innerText = `${e.clientY.toString()}px`
+      xCoord.value!.innerText = `${x}px`
+      yCoord.value!.innerText = `${y}px`
 
-      xCoord.value!.style.left = Math.max(50, e.clientX - 100) + "px"
-      xCoord.value!.style.top =  Math.min(windowHeight - 100, Math.max(50, e.clientY - 40)) + "px"
+      xCoord.value!.style.left = Math.max(50, x - 100) + "px"
+      xCoord.value!.style.top =  Math.min(windowHeight - 100, Math.max(50, y - 40)) + "px"
 
-      yCoord.value!.style.left = Math.min(windowWidth - 100, e.clientX + 40) + "px"
-      yCoord.value!.style.top = Math.min(windowHeight - 100, e.clientY + 150) + "px"
+      yCoord.value!.style.left = Math.min(windowWidth - 100, x + 40) + "px"
+      yCoord.value!.style.top = Math.min(windowHeight - 100, y + 150) + "px"
 
       // set opacity on next tick
       if (!opacitySet.value) {
@@ -77,7 +95,14 @@ onMounted(() => {
         }, 170)
       }
     }
-  })
+  }
+
+  // update on mouse move
+  window.addEventListener("mousemove", update)
+
+  // update on touch move
+  window.addEventListener("touchmove", update)
+  
 })
 
 </script>
@@ -104,6 +129,7 @@ onMounted(() => {
 
   // smooth transition
   transition: 0.1s cubic-bezier(0.25, 0.46, 0.75, 0.94)
+  // transition: 0.1s cubic-bezier(.21,1.8,.82,.15)
   // transition: 0.1s cubic-bezier(0,1.5,1,1.5)
   
   // opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
@@ -149,7 +175,6 @@ onMounted(() => {
   font-size: 12px
   font-weight: 300
   font-family: typography.font("monospace"), monospace
-  // opacity: 0
   transition: 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
 
   width: 5ch

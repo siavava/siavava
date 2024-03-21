@@ -1,0 +1,143 @@
+
+//// Neue Montreal Font
+
+// thin
+@font-face {
+  font-family: 'Neue Montreal';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('@/assets/fonts/NeueMontreal/PPNeueMontreal-Thin.otf') format('truetype');
+}
+
+// Regular
+@font-face {
+  font-family: 'Neue Montreal';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('@/assets/fonts/NeueMontreal/PPNeueMontreal-Regular.otf') format('truetype');
+}
+
+// Regular Italic
+@font-face {
+  font-family: 'Neue Montreal';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('@/assets/fonts/NeueMontreal/PPNeueMontreal-Italic.otf') format('truetype');
+}
+
+
+// Medium
+@font-face {
+  font-family: 'Neue Montreal';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('@/assets/fonts/NeueMontreal/PPNeueMontreal-Medium.otf') format('truetype');
+}
+
+// SemiBold Italic
+@font-face {
+  font-family: 'Neue Montreal';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('@/assets/fonts/NeueMontreal/PPNeueMontreal-SemiBolditalic.otf') format('truetype');
+}
+// Bold
+@font-face {
+  font-family: 'Neue Montreal';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('@/assets/fonts/NeueMontreal/PPNeueMontreal-Bold.otf') format('truetype');
+}
+
+
+//// SF Mono Font
+
+
+
+// sf-mono regular := 400
+@font-face {
+  font-family: 'SF Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('SF Mono Regular'),
+    url('@/assets/fonts/SFMono/SFMono-Regular.ttf') format('truetype'),
+    url('@/assets/fonts/SFMono/SFMono-Regular.woff') format('woff'),
+    url('@/assets/fonts/SFMono/SFMono-Regular.woff2') format('woff2');
+}
+
+// sf-mono regular := 400 italic
+@font-face {
+  font-family: 'SF Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('SF Mono Regular Italic'),
+    url('@/assets/fonts/SFMono/SFMono-RegularItalic.ttf') format('truetype'),
+    url('@/assets/fonts/SFMono/SFMono-RegularItalic.woff') format('woff'),
+    url('@/assets/fonts/SFMono/SFMono-RegularItalic.woff2') format('woff2');
+}
+
+
+
+
+// sf-mono medium := 500 normal
+@font-face {
+  font-family: 'SF Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local('SF Mono Medium'),
+    url('@/assets/fonts/SFMono/SFMono-Medium.ttf') format('truetype'),
+    url('@/assets/fonts/SFMono/SFMono-Medium.woff') format('woff'),
+    url('@/assets/fonts/SFMono/SFMono-Medium.woff2') format('woff2');
+}
+
+// sf-mono medium := 500 italic
+@font-face {
+  font-family: 'SF Mono';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local('SF Mono Medium Italic'),
+    url('@/assets/fonts/SFMono/SFMono-MediumItalic.ttf') format('truetype'),
+    url('@/assets/fonts/SFMono/SFMono-MediumItalic.woff') format('woff'),
+    url('@/assets/fonts/SFMono/SFMono-MediumItalic.woff2') format('woff2');
+}
+
+// sf-mono semibold := 600 normal
+@font-face {
+  font-family: 'SF Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local('SF Mono Semibold'),
+    url('@/assets/fonts/SFMono/SFMono-Semibold.ttf') format('truetype'),
+    url('@/assets/fonts/SFMono/SFMono-Semibold.woff') format('woff'),
+    url('@/assets/fonts/SFMono/SFMono-Semibold.woff2') format('woff2');
+}
+
+
+// sf-mono semibold := 600 italic
+@font-face {
+  font-family: 'SF Mono';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local('SF Mono Semibold Italic'),
+    url('@/assets/fonts/SFMono/SFMono-SemiboldItalic.ttf') format('truetype'),
+    url('@/assets/fonts/SFMono/SFMono-SemiboldItalic.woff') format('woff'),
+    url('@/assets/fonts/SFMono/SFMono-SemiboldItalic.woff2') format('woff2');
+}

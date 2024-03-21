@@ -1,0 +1,30 @@
+@use "sass:map";
+// @use "@/styles/raw-fonts";
+
+@function font($name) {
+  $result: map.get($fonts-map, $name);
+  @return $result;
+}
+
+@function font-size($size) {
+  $result: map.get($font-sizes, $size);
+  @return $result;
+}
+
+$fonts-map: (
+  "sans-serif": "Neue Montreal",
+  "monospace": "SF Mono",
+);
+
+$font-sizes: (
+  "xxs": 11px,
+  "xs": 13px,
+  "s": 14px,
+  // "m": 14px,
+  "m": 15px,
+  "l": 17px,
+  "xl": 19px,
+  "xxl": 21px,
+  "heading": clamp(21px, 5vw, 35px),
+  "big-heading": 80px
+);

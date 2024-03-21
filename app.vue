@@ -74,11 +74,6 @@ main
   left: 50%
   transform: translate(-50%, -50%)
 
-  color: colors.color(lightest-foreground)
-
-  &:hover
-    color: colors.color(dark-foreground)
-
 .year
   color: colors.color(lightest-foreground)
 

@@ -6,6 +6,7 @@
           <ContentDoc class="about" path="/about" />
         </div>
       </div>
+      <Blob />
     </main>
   </body>
 </template>
@@ -58,7 +59,6 @@ main
   display: flex
   gap: 10em
 
-  // width: 300px
   width: 400px
 
   padding: 0 2em

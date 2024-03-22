@@ -8,15 +8,15 @@ defineProps({
     type: Boolean,
     default: true,
   },
-  blank: {
+  point: {
     type: Boolean,
-    default: false,
-  },
-  bold: {
-    type: Boolean,
-    default: false,
+    default: true,
   },
 })
+
+const isExternal = (href: string) => {
+  return href.startsWith("http")
+}
 </script>
 
 <template>
@@ -25,9 +25,23 @@ defineProps({
   >
     <NuxtLink
       :href="href"
-      :class="{'link': true, 'bold': bold, 'arrow': fancy}"
+      :class="{
+        'link': true,
+        'arrow': fancy,
+        'point': point,
+      }"
       target="_blank"
       rel="noopener noreferrer"
+      v-if="isExternal(href)"
+    >
+      <span>
+        <slot />
+      </span>
+    </NuxtLink>
+    <NuxtLink
+      :href="href"
+      :class="{'link': true, 'arrow': fancy}"
+      v-else
     >
       <span>
         <slot />
@@ -65,17 +79,20 @@ defineProps({
   align-items: center
   gap: 7px
   display: inline
-  // cursor: none
+  cursor: none
 
   &:hover > .pointer
     transform: translate(3px, -3px)
 
 .link
   transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-  // cursor: none
+  cursor: none
   
   &:hover
     color: colors.color(lightest-foreground)
+
+    &.point
+      cursor: pointer
 
 .pointer
   height: 1em

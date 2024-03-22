@@ -1,11 +1,11 @@
 <template>
   <div class="blob" id="blob" ref="blob" />
-  <div class="line vertical north" ref="north" />
-  <div class="line vertical south" ref="south" />
-  <div class="line horizontal east" ref="east" />
-  <div class="line horizontal west" ref="west" />
-  <span class="coordinate x" ref="xCoord" />
-  <span class="coordinate y" ref="yCoord" />
+  <div class="line vertical north" id="north" ref="north" />
+  <div class="line vertical south" id="south" ref="south" />
+  <div class="line horizontal east" id="east" ref="east" />
+  <div class="line horizontal west" id="west" ref="west" />
+  <span class="coordinate x" id="x-coord" ref="xCoord" />
+  <span class="coordinate y" id="y-coord" ref="yCoord" />
 </template>
 
 <script setup lang="ts">
@@ -26,8 +26,6 @@ onMounted(() => {
   const windowWidth = window.innerWidth
   const windowHeight = window.innerHeight
 
-  
-  
   const update = (e: MouseEvent | TouchEvent) => {
     let x;
     let y;
@@ -46,38 +44,37 @@ onMounted(() => {
     }
     if (blob.value && north.value && south.value && east.value && west.value) {
       
-      blob.value.style.left = x + "px"
-      blob.value.style.top = y + "px"
-
-      // set north and south x to current x
-      north.value.style.left = x + "px"
-      south.value.style.left = x + "px"
+      blob.value.style.transform = `translate(calc(${x}px - 50%), calc(${y}px - 50%))`
 
       // set east and west y to current y
-      east.value.style.top = y + "px"
-      west.value.style.top = y + "px"
+      east.value.style.transform = `translateY(${y}px)`
+      west.value.style.transform = `translateY(${y}px)`
 
       // set north bottom to current y - 30
-      north.value.style.bottom = window.innerHeight - y + OFFSET + "px"
+      north.value.style.transform = `translate(${x}px, ${y - OFFSET}px)`
 
       // set south top to current y - 30
-      south.value.style.top = y + OFFSET + "px"
+      south.value.style.transform = `translate(${x}px, ${y + OFFSET}px)`
 
       // set east left to current x - 30
-      east.value.style.left = x + OFFSET + "px"
+      east.value.style.transform = `translate(${x - OFFSET}px, ${y}px)`
 
       // set west right to current x - 30
-      west.value.style.right = window.innerWidth - x + OFFSET + "px"
+      west.value.style.transform = `translate(${x + OFFSET}px, ${y}px)`
 
       // set x and y coords
       xCoord.value!.innerText = `${x}px`
       yCoord.value!.innerText = `${y}px`
 
-      xCoord.value!.style.left = Math.max(50, x - 100) + "px"
-      xCoord.value!.style.top =  Math.min(windowHeight - 100, Math.max(50, y - 40)) + "px"
+      const xLeft = Math.min(Math.max(65, x - 75), windowWidth - 100)
+      const yTop = Math.min(Math.max(65, y + 45), windowHeight - 100)
+      
+      const xTop = Math.min(Math.max(65, y - 45), windowHeight - 100)
+      const yLeft = Math.min(Math.max(65, x + 25), windowWidth - 100)
 
-      yCoord.value!.style.left = Math.min(windowWidth - 100, x + 40) + "px"
-      yCoord.value!.style.top = Math.min(windowHeight - 100, y + 150) + "px"
+      xCoord.value!.style.transform = `translate(${xLeft}px, ${xTop}px)`
+
+      yCoord.value!.style.transform = `translate(${yLeft}px, ${yTop}px)`
 
       // set opacity on next tick
       if (!opacitySet.value) {
@@ -112,7 +109,8 @@ onMounted(() => {
 @use "@/styles/typography"
 
 .blob
-  background: colors.color(primary-highlight)
+  // background: colors.color(primary-highlight)
+  background: colors.color("yellow")
   width: 40px
   aspect-ratio: 1 / 1
   border-radius: 50%
@@ -129,10 +127,6 @@ onMounted(() => {
 
   // smooth transition
   transition: 0.1s cubic-bezier(0.25, 0.46, 0.75, 0.94)
-  // transition: 0.1s cubic-bezier(.21,1.8,.82,.15)
-  // transition: 0.1s cubic-bezier(0,1.5,1,1.5)
-  
-  // opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
 
 
 .line
@@ -145,28 +139,26 @@ onMounted(() => {
   &.vertical
     width: 0.5px
     height: 200vw
-    transform: translateX(-50%)
 
-    left: 50%
+    left: 0
 
     &.north
-      bottom: calc(50% + 30px)
+      bottom: 100%
 
     &.south
-      top: calc(50% + 30px)
+      top: 0
 
   &.horizontal
     width: 200vw
     height: 0.5px
-    transform: translateY(-50%)
 
-    top: 50%
+    top: 0
 
     &.east
-      left: calc(50% + 30px)
+      right: 100%
 
     &.west
-      right: calc(50% + 30px)
+      left: 0
 
 .coordinate
   position: absolute
@@ -178,14 +170,15 @@ onMounted(() => {
   transition: 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
 
   width: 5ch
+  // background: rgba(yellow, 0.3)
 
   &.x
     left: 0
     top: 0
 
   &.y
-    right: 0
-    bottom: 0
+    left: 0
+    top: 0
 
 
 </style>

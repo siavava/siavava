@@ -17,12 +17,19 @@
 </template>
 
 <script lang="ts" setup>
-// when #panels is hovered, change the size of #blob to 10px
-// when #panels is not hovered, change the size of #blob to 100px
-
 onMounted(() => {
   const panels = document.getElementById("prose-ul")
   const blob = document.getElementById("blob")
+
+  const north = document.getElementById("north")
+  const east = document.getElementById("east")
+  const south = document.getElementById("south")
+  const west = document.getElementById("west")
+
+  const xCoord = document.getElementById("x-coord")
+  const yCoord = document.getElementById("y-coord")
+
+  const lines = [north, east, south, west, xCoord, yCoord]
 
   if (!panels || !blob) {
     return
@@ -31,11 +38,21 @@ onMounted(() => {
   panels?.addEventListener("mouseenter", () => {
     blob.style.width = "10px"
     blob.style.height = "10px"
+
+    lines.forEach((line) => {
+      // set opacity to 0
+      if (line) line.style.opacity = "0"
+    })
   })
 
   panels?.addEventListener("mouseleave", () => {
     blob.style.width = "40px"
     blob.style.height = "40px"
+
+    lines.forEach((line) => {
+      // set opacity to 1
+      if (line) line.style.opacity = "1"
+    })
   })
 })
 </script>
@@ -69,16 +86,16 @@ body
   gap: 10em
 
   // width: 300px
-  width: fit-content
-  min-width: 300px
-  // border: 1px solid red
+
+  width: 312px
 
   position: absolute
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
+  top: calc(50% - 156px)
+  left: calc(50% - 156px)
 
 .year
-  color: colors.color(lightest-foreground)
+  // color: colors.color(lightest-foreground)
+  // color: colors.color("blue")
+  color: colors.color("yellow")
 
 </style>

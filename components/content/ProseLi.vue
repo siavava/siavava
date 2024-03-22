@@ -9,7 +9,7 @@
 @use "@/styles/typography"
 
 .prose-li
-  position: relative
+  // position: relative
   font-weight: 500
   line-height: 1.6
   font-size: typography.font-size("m")

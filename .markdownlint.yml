@@ -1,3 +1,4 @@
 no-inline-html: false
 first-line-h1: false
 no-trailing-punctuation: false
+heading-increment: false

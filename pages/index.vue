@@ -3,15 +3,9 @@
     <main>
       <div class="panels" id="panels">
         <div class="left-panel">
-          <ContentDoc class="about" path="/categories" />
-        </div>
-        <div class="right-panel">
-          <div class="year">
-            {{ new Date().getFullYear() }}
-          </div>
+          <ContentDoc class="about" path="/about" />
         </div>
       </div>
-      <Blob />
     </main>
   </body>
 </template>
@@ -40,7 +34,7 @@ onMounted(() => {
 })
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 @use "@/styles/colors"
 @use "@/styles/typography"
 
@@ -50,11 +44,11 @@ onMounted(() => {
   flex-direction: column
   width: 100svw
   height: 100svh
-  overflow: hidden
+  overflow: scroll
 
 main
   width: min(100svw, 640px)
-  padding: 0 clamp(0.5em, 3vw, 3em)
+  padding: 50px clamp(0.5em, 3vw, 3em)
   margin: auto
   font-weight: 400
   line-height: 22px
@@ -65,14 +59,16 @@ main
   gap: 10em
 
   // width: 300px
-  width: fit-content
-  min-width: 300px
-  // border: 1px solid red
+  width: 400px
+
+  padding: 0 2em
 
   position: absolute
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
+
+  text-align: center
 
 .year
   color: colors.color(lightest-foreground)

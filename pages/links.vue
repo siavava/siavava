@@ -3,7 +3,7 @@
     <main>
       <div class="panels" id="panels">
         <div class="left-panel">
-          <ContentDoc class="about" path="/quicklinks" />
+          <ContentDoc class="about" path="/links" />
         </div>
         <div class="right-panel">
           <div class="year">
@@ -11,6 +11,7 @@
           </div>
         </div>
       </div>
+      <Author />
       <Blob />
     </main>
   </body>

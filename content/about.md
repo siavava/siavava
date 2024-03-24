@@ -14,7 +14,7 @@ category: landing
 
 Where to find me
 
-:styled-button[links]{to="/quicklinks"}
+:styled-button[links]{to="/links"}
 
 :v-bar
 

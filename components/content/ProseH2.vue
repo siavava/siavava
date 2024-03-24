@@ -9,7 +9,7 @@
 
 <script lang="ts" setup>
 const { path } = useRoute()
-const isQLinks = path === "/quicklinks"
+const isQLinks = path === "/links"
 </script>
 
 <style lang="sass" scoped>

@@ -1,12 +1,13 @@
 My name is Amittai.  
 
-I am currently working on [entendr.][entendr]  
+I am currently working on [entendr.][entendr], and will be dropping some stuff soon. :construction:  
 
-For more about me, check out my [portfolio][portfolio].  
-Alternatively, here's some [writing][blog], [generative art][art], and a [guestbook][guestbook].
+For more about me, check out my [working statement][statement] or my [portfolio][portfolio].  
+Alternatively, here's some [writing][blog] and [generative art][art].
 
+[statement]:  https://amittai.work
 [portfolio]:  https://amittai.studio
-[guestbook]:  https://gist.github.com/siavava/3e19dba1b33641b8c893d28c5c892ce1
+
 [blog]:       https://txt.amittai.studio
 [art]:        https://amittai.art
 [entendr]:    https://entendr.life

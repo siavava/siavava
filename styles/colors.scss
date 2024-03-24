@@ -1,7 +1,9 @@
 @use "sass:map";
 
 $palette: (
-  "primary-highlight": color(display-p3 0.98 0.8 0.14),
+  // "primary-highlight": color(display-p3 0.98 0.8 0.14),
+
+  "primary-highlight": color(display-p3 0.98 0.8 0.54),
 
   "yellow": color(display-p3 0.98 0.8 0.14),
   "orange": color(display-p3 0.99 0.4 0.02),

@@ -7,6 +7,7 @@
         </div>
       </div>
       <Blob />
+      <Author />
     </main>
   </body>
 </template>

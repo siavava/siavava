@@ -1,6 +1,6 @@
 <img src="public/root.png" width="170" align="right">
 
-<img src="public/alt-logo.svg" width="200">
+<img src="public/alt-logo2.svg" width="200">
 
 My name is Amittai.  
 

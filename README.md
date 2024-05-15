@@ -1,19 +1,20 @@
+### **Amittai** 
+
+#### Mathematics, Computer Science, ...
+
 <img src="public/root.png" width="170" align="right">
 
 <img src="public/alt-logo2.svg" width="200">
 
-My name is Amittai.  
+I am currently working on [entendr.][entendr] :construction:  
 
-I am currently working on [entendr.][entendr], and will be dropping some 
-stuff soon. :construction:  
+Here are (some) things that [motivate what I choose to work on][statement].
 
-For more about me, check out my [working statement][statement] or my
-[portfolio][portfolio].  
-Alternatively, here's some [writing][blog] and [generative art][art].
+For examples of what I have built, check out my [portfolio][portfolio].  
+I also have a [blog][blog] and am trying out some [generative art][art].
 
 [statement]:  https://amittai.work
 [portfolio]:  https://amittai.studio
-
 [blog]:       https://txt.amittai.studio
 [art]:        https://amittai.art
 [entendr]:    https://entendr.life

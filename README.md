@@ -4,13 +4,14 @@
 
 I am currently working on [entendr.][entendr] :construction:  
 
-Here are (some) ...
+Here is/are (some) ...
 
-👉 ... [things that motivate what I choose to work on][statement].  
-👉 ... [things I have built][portfolio].  
+👉 ... [more about myself][portfolio].  
+👉 ... [motivations for what I choose to work on][statement].  
+👉 ... an [index of things I have built][archive]. The relevant repositories are housed [here][lostflux].  
 👉 ... [things I've written][blog].  
 👉 ... [things I _actually_ spend most of my time on][art].  
-👉 ... [a planetarium][planetarium]!
+👉 ... [a planetarium][planetarium]! Do you like celestials?
 
 Thoughts, questions, or concerns? [Do tell][email].
 
@@ -18,8 +19,10 @@ Thoughts, questions, or concerns? [Do tell][email].
 
 [statement]:      https://amittai.work
 [portfolio]:      https://amittai.studio
+[archive]:        https://amittai.studio/archive
 [blog]:           https://txt.amittai.studio
 [art]:            https://amittai.art
 [entendr]:        https://entendr.life
 [email]:          mailto:amittaijoel@outlook.com
 [planetarium]:    https://astra.amittai.studio
+[lostflux]:       https://github.com/lostflux

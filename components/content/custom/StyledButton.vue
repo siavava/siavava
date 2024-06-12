@@ -1,10 +1,10 @@
 <template>
   <div class="styled-button-container">
+    <ProseA :href="to" :fancy="false" class="link">
     <div class="styled-button" ref="styledButton">
-      <ProseA :href="to">
         <slot />
-      </ProseA>
-    </div>
+      </div>
+    </ProseA>
   </div>
 </template>
 
@@ -69,10 +69,11 @@ onMounted(() => {
     border-radius: 20px
     transition: background-color 0.3s
     width: fit-content
-    background-color: colors.color(light-background)
+    background-color: rgba(colors.color(light-background), 0.3)
     color: colors.color(foreground)
 
     &:hover
-      background-color: colors.color(lightest-background)
+      background-color: rgba(colors.color(lightest-background), 0.5)
       color: colors.color(lightest-foreground)
+
 </style>

@@ -22,6 +22,8 @@ onMounted(() => {
   const panels = document.getElementById("prose-ul")
   const blob = document.getElementById("blob")
 
+  if (!panels || !blob) return
+
   const north = document.getElementById("north")
   const east = document.getElementById("east")
   const south = document.getElementById("south")
@@ -32,9 +34,7 @@ onMounted(() => {
 
   const lines = [north, east, south, west, xCoord, yCoord]
 
-  if (!panels || !blob) {
-    return
-  }
+
 
   panels?.addEventListener("mouseenter", () => {
     blob.style.width = "10px"
@@ -95,8 +95,16 @@ body
   left: calc(50% - 156px)
 
 .year
-  // color: colors.color(lightest-foreground)
-  // color: colors.color("blue")
-  color: colors.color("yellow")
+  color: colors.color("primary-highlight")
+  font-size: 48px
+  position: absolute
+  right: 0
+
+  // make it empty letters with otuline
+  text-stroke: 1px colors.color(light-background)
+  -webkit-text-stroke: 1px colors.color(light-background)
+  -webkit-text-fill-color: transparent
+
+  transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
 
 </style>

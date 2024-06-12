@@ -53,7 +53,6 @@ const isExternal = (href: string) => {
       width="12"
       height="12"
       viewBox="0 0 12 12"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -65,7 +64,7 @@ const isExternal = (href: string) => {
             9.35355L2.64645 8.64645ZM3.5 4H8.5V3H3.5V4ZM8
             3.5V8.5H9V3.5H8ZM8.14645 3.14645L2.64645
             8.64645L3.35355 9.35355L8.85355 3.85355L8.14645 3.14645Z"
-        fill="#eee"
+        fill="currentcolor"
       />
     </svg>
   </span>
@@ -98,4 +97,9 @@ const isExternal = (href: string) => {
   height: 1em
   aspect-ratio: 1/1 !important
   transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  margin-left: 0.2em
+  // stroke: colors.color("primary-highlight")
+  // stroke-width: 0.5px
+  // fill: none
+  color: colors.color("primary-highlight")
 </style>

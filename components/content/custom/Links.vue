@@ -70,6 +70,9 @@ onMounted(() => {
 
   pointer-events: none
 
+  @media (max-width: 768px)
+    display: none
+
   &.active
     opacity: 1
 </style>

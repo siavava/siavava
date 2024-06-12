@@ -110,11 +110,13 @@ onMounted(() => {
 
 .blob
   // background: colors.color(primary-highlight)
-  background: colors.color("yellow")
+  // background: colors.color("yellow")
+  background: colors.color("primary-highlight")
   width: 40px
   aspect-ratio: 1 / 1
   border-radius: 50%
   position: absolute
+  z-index: 999
   
   top: 0
   left: 0
@@ -126,7 +128,9 @@ onMounted(() => {
   pointer-events: none
 
   // smooth transition
-  transition: 0.1s cubic-bezier(0.25, 0.46, 0.75, 0.94)
+  // transition: 0.1s cubic-bezier(0.25, 0.46, 0.75, 0.94)
+
+  transition: 0.1s cubic-bezier(.2, .8, .2, 1)
 
 
 .line

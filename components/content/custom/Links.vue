@@ -61,14 +61,18 @@ onMounted(() => {
   width: 340px
   padding: 20px
 
-  font-family: typography.font("monospace"), monospace
-  font-size: 11px
+  font-family: typography.font("serif"), serif
+  font-size: 14px
 
   transition: 0.3s
 
   border: 1px dashed colors.color("lightest-background")
 
   pointer-events: none
+
+  // hide if does not contain .prose-blockquote
+  // & > :not(.prose-blockquote)
+  //   display: none
 
   @media (max-width: 768px)
     display: none

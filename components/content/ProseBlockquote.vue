@@ -66,12 +66,29 @@ export default {
   position: relative
   margin: 2rem 0 0 0
   padding: 0 2rem 0 1em
-  border-left: 2px solid colors.color(primary-highlight)
+  // border-left: 2px solid colors.color(primary-highlight)
   color: colors.color(primary-highlight)
 
-  font-size: 0.8em
+  // font-size: 0.8em
 
   &:not(:last-child)
     margin-bottom: 1.5rem
 
+  &::before
+    content: "“"
+    font-size: 4rem
+    position: absolute
+    top: 0.2em
+    left: -0.2em
+    color: colors.color(primary-highlight)
+    font-family: typography.font("serif"), serif
+
+  &::after
+    background: colors.color(primary-highlight)
+    content: " "
+    width: 2px
+    height: calc(100% - 2.2em)
+    position: absolute
+    top: 2em
+    left: -0.2em
 </style>

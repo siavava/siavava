@@ -1,5 +1,5 @@
 <template>
-  <a ref="authorButton" id="author-link" to="https://amittai.studio">
+  <a ref="authorButton" id="author-link" href="https://amittai.studio">
     created by&nbsp;<span class="author">amittai</span>
   </a>
 </template>

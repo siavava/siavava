@@ -10,6 +10,11 @@ export default defineNuxtConfig({
     "@/styles/raw-fonts.scss",
     "@/styles/typography.scss",
   ],
+  routeRules: {
+    "/sitemap.xml": {
+      prerender: true,
+    }
+  },
   app: {
     head: {
       title: "landing | alt.",

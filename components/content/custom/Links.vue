@@ -55,8 +55,14 @@ onMounted(() => {
 
   opacity: 0
   position: fixed
-  bottom: 40px
-  right: 40px
+  // bottom: 40px
+  // right: 40px
+  // bottom: 95vh
+  // right: 95vw
+
+  bottom: calc(-1 * (50vh - 60%))
+  right: calc(-1 * (50vw - 60%))
+  // transform: translateY(-50%)
 
   width: 340px
   padding: 20px

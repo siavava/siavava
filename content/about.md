@@ -4,7 +4,7 @@ category: landing
 
 <!-- :animated-gradient -->
 
-# alt.
+# Amittai Siavava
 
 ### Dare to dream, dare to create
 

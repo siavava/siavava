@@ -8,7 +8,8 @@ Here is/are (some) ...
 
 👉 ... [more about myself][portfolio].  
 👉 ... [motivations for what I choose to work on][statement].  
-👉 ... an [index of things I have built][archive]. The relevant repositories are housed [here][lostflux].  
+👉 ... an [index of things I have built][archive].
+  The relevant repositories are housed [here][lostflux].  
 👉 ... [things I've written][blog].  
 👉 ... [things I _actually_ spend most of my time on][art].  
 👉 ... [a planetarium][planetarium]! Do you like celestials?
@@ -20,7 +21,7 @@ Thoughts, questions, or concerns? [Do tell][email].
 [statement]:      https://amittai.work
 [portfolio]:      https://amittai.studio
 [archive]:        https://amittai.studio/archive
-[blog]:           https://txt.amittai.studio
+[blog]:           https://amittai.space
 [art]:            https://amittai.art
 [entendr]:        https://entendr.life
 [email]:          mailto:amittaijoel@outlook.com

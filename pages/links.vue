@@ -86,13 +86,12 @@ body
   display: flex
   gap: 10em
 
-  // width: 300px
-
-  width: 312px
+  width: min(412px, 100vw)
 
   position: absolute
-  top: calc(50% - 156px)
-  left: calc(50% - 156px)
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
 
 .year
   color: colors.color("primary-highlight")

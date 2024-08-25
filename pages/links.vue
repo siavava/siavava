@@ -86,12 +86,16 @@ body
   display: flex
   gap: 10em
 
-  width: min(412px, 100vw)
+  width: min(412px, 85vw)
 
   position: absolute
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
+
+  @media screen and (max-width: 960px)
+    transform: translate(-50%, -50%) scale(0.9)
+    // width: min(412px, 85vw)
 
 .year
   color: colors.color("primary-highlight")
@@ -105,5 +109,6 @@ body
   -webkit-text-fill-color: transparent
 
   transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  transform: translateY(75%)
 
 </style>

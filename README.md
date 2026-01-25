@@ -1,4 +1,6 @@
-<img src="public/root.png" width="170" align="right">
+i got that dawg in me
+
+<!-- <img src="public/root.png" width="170" align="right">
 
 <img src="public/alt-logo2.svg" width="200">
 
@@ -26,4 +28,4 @@ Thoughts, questions, or concerns? [Do tell][email].
 [entendr]:        https://entendr.life
 [email]:          mailto:amittaijoel@outlook.com
 [planetarium]:    https://astra.amittai.studio
-[lostflux]:       https://github.com/lostflux
+[lostflux]:       https://github.com/lostflux -->

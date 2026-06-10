@@ -1,4 +1,4 @@
-i got that dawg in me
+<!-- i got that dawg in me -->
 
 <!-- <img src="public/root.png" width="170" align="right">
 

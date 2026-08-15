@@ -1,3 +1,5 @@
-building.
+pursuing play.[^pains]
 
-portfolio: [amittai.studio](https://amittai.studio)
+[amittai.studio](https://amittai.studio)
+
+[^pains]: & other such ~pressures~ pleasures and pains.
